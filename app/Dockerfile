@@ -10,5 +10,3 @@ RUN yarn
 # set working directory
 WORKDIR /app
 ADD . /app
-
-CMD ["npm", "start"]

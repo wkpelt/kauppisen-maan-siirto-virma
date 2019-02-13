@@ -1,15 +1,14 @@
 version: '3.5'
 
 services:
-  sample-app:
-    container_name: react-app
+  react-app:
+    container_name: wunder-app
+    restart: always
     build:
       context: .
       dockerfile: Dockerfile
+    command: 'yarn start'
     volumes:
-      - '.:/usr/src/app'
-      - '/usr/src/app/node_modules'
+      - '.:/app'
     ports:
       - '3000:3000'
-    environment:
-      - NODE_ENV=development
