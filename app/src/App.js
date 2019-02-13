@@ -1,12 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Card from './Components/Card/Card';
+import Container from'./Components/Container/Container' ;
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Wunder workshop</h1>
+        <Header />
+        <Container>
+          <Card>
+            <h2>Tämä on korttiin piirretty otsikko</h2>
+          </Card>
+          <Card>
+            <h2>Tämä on korttiin piirretty otsikko</h2>
+          </Card>
+          <Card>
+            <h2>Tämä on korttiin piirretty otsikko</h2>
+          </Card>
+          <Card>
+            <h2>Tämä on korttiin piirretty otsikko</h2>
+          </Card>
+        </Container>
+        <Footer />
       </div>
     );
   }

@@ -1,0 +1,7 @@
+.Container {
+  min-height: 100%;
+  height: auto;
+  background: #5CDB95;
+  display: flex;
+  flex-flow: row wrap;
+}
