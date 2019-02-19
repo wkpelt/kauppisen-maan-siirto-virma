@@ -21,4 +21,4 @@ services:
       - './drupal/themes:/var/www/html/themes'
       - '/var/www/html/sites/default/files'
   mariadb:
-      image: mariadb:latest
+    image: mariadb:latest
