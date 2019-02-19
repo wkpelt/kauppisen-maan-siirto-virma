@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+  react-app:
+    container_name: wunder-app
+    restart: always
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    command: 'yarn start'
+    volumes:
+      - './app:/app'
+    ports:
+      - '3000:3000'
