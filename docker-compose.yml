@@ -12,3 +12,13 @@ services:
       - './app:/app'
     ports:
       - '3000:3000'
+  drupal:
+    image: drupal:latest
+    ports:
+      - '3030:80'
+    volumes:
+      - './drupal/modules:/var/www/html/modules'
+      - './drupal/themes:/var/www/html/themes'
+      - './drupal/files:/var/www/html/sites/default/files'
+  mariadb:
+      image: mariadb:latest
