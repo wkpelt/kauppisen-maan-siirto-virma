@@ -5,11 +5,11 @@ services:
     container_name: wunder-app
     restart: always
     build:
-      context: ./app
+      context: ./frontend
       dockerfile: Dockerfile
     command: 'yarn start'
     volumes:
-      - './app:/app'
+      - './frontend:/frontend'
     ports:
       - '3000:3000'
   drupal:
