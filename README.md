@@ -1,14 +1,14 @@
-# wunder_workshop_frontend
+# wunder_workshop
 
-Fronttiprokkis 2019 kevään Wunder workshoppiin
+Projektipohja 2019 kevään Wunderin ja Digitin yhteistyöworkshoppiin
 
-## Docker compose command
+## Docker compose
 
 docker-compose up -d --build
 
-## Configuring overrides for credentials
+### Configuring overrides for credentials
 
-# Kopioi pohja
+#### Kopioi pohja
 cp docker-compose.override.yml.example docker-compose.override.yml
 
-# Keksi jotkin salasanat
+Keksi jotkin salasanat.
