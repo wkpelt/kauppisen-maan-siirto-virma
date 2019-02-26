@@ -10,13 +10,16 @@ Projektissa on käytössä [Docker](https://www.docker.com/).
 
 ### Docker-compose
 
- Dockerin käyttöä helpottamaan käytetään docker-compose -tiedostoa. Docker-compose -tiedostossa kerrotaan millaiset kontit tulee muodostaa.
+Dockerin käyttöä helpottamaan käytetään docker-compose -tiedostoa. Docker-compose -tiedostossa kerrotaan millaiset kontit tulee muodostaa.
 
 Saadaksesi tarvittavat kontit käyntiin täytyy seuraava komento ajaa komentoriviltä projektin juuressa:
 
 ```
 docker-compose up -d --build
 ```
+
+Tarkista, että front-end sekä drupal toimivat menemällä osoitteeseen:
+http://localhost:3000/ sekä http://localhost:3030/
 
 Seuraavalla komennolla saat kaikki kontit pysäytettyä:
 
