@@ -15,7 +15,7 @@ Dockerin käyttöä helpottamaan käytetään docker-compose -tiedostoa. Docker-
 Saadaksesi tarvittavat kontit käyntiin täytyy seuraava komento ajaa komentoriviltä projektin juuressa:
 
 ```
-docker-compose up -d --build
+$ docker-compose up -d --build
 ```
 
 Tarkista, että front-end sekä drupal toimivat menemällä osoitteeseen:
@@ -24,7 +24,7 @@ http://localhost:3000/ sekä http://localhost:3030/
 Seuraavalla komennolla saat kaikki kontit pysäytettyä:
 
 ```
-docker stop $(docker ps -a -q)
+$ docker-compose stop
 ```
 
 ### Drupal-kontin asetukset
@@ -32,7 +32,7 @@ docker stop $(docker ps -a -q)
 Kopioi override-tiedoston pohja, jota sitten muokataan omaan käyttöön.
 
 ```
-cp docker-compose.override.yml.example docker-compose.override.yml
+$ cp docker-compose.override.yml.example docker-compose.override.yml
 ```
 
 Keksi kontin root-käyttäjälle ja mariadb:lle salasanat.
