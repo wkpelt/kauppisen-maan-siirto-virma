@@ -24,7 +24,7 @@ http://localhost:3000/ sekä http://localhost:3030/
 Seuraavalla komennolla saat kaikki kontit pysäytettyä:
 
 ```
-docker stop $(docker ps -a -q)
+docker-compose stop
 ```
 
 ### Drupal-kontin asetukset
