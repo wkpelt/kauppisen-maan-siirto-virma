@@ -6,7 +6,7 @@ Projektilla on tarkoitus tutustua Drupalin perusteisiin ja tehdä yksinkertainen
 
 ## Slack
 
-[Täältä pääsee Slackiin!](digitinkoodikerho.slack.com)
+[Täältä pääsee Slackiin!](https://digitinkoodikerho.slack.com)
 
 ## Docker
 
