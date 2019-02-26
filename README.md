@@ -26,6 +26,12 @@ Saadaksesi tarvittavat kontit käyntiin täytyy seuraava komento ajaa komentoriv
 $ docker-compose up -d --build
 ```
 
+Kun tämä komento on kerran ajettu voit jatkossa käyttää komentoa: 
+
+```
+$ docker-compose up -d
+```
+
 Tarkista, että front-end sekä drupal toimivat menemällä osoitteeseen:
 http://localhost:3000/ sekä http://localhost:3030/
 
