@@ -4,6 +4,10 @@ Projektipohja 2019 kevään Wunderin ja Digitin yhteistyöworkshoppiin.
 
 Projektilla on tarkoitus tutustua Drupalin perusteisiin ja tehdä yksinkertainen käyttöliittymä käyttäen Reactia.
 
+## Slack
+
+[Täältä pääsee Slackiin!](digitinkoodikerho.slack.com)
+
 ## Docker
 
 Projektissa on käytössä [Docker](https://www.docker.com/).
