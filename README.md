@@ -8,6 +8,10 @@ Projektilla on tarkoitus tutustua Drupalin perusteisiin ja tehdä yksinkertainen
 
 [Täältä pääsee Slackiin!](https://digitinkoodikerho.slack.com)
 
+## Github
+
+[Täältä](https://help.github.com/en/articles/syncing-a-fork) löytyy ohjeet originaali-repon konfiguroinnista, jotta muutokset saa pullattua mukaan omaan forkiin.
+
 ## Docker
 
 Projektissa on käytössä [Docker](https://www.docker.com/).
