@@ -8,5 +8,5 @@ ENV PATH=$PATH:/node_modules/.bin
 RUN yarn
 
 # set working directory
-WORKDIR /app
-ADD . /app
+WORKDIR /frontend
+ADD . /frontend
