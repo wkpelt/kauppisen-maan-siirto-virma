@@ -12,7 +12,7 @@ class App extends Component {
         <Header />
         <Container>
           <Card>
-            <h2>.konsta spurtsi</h2>
+            <h2>.test</h2>
           </Card>
           <Card>
             <h2>Tämä on korttiin piirretty otsikko</h2>
