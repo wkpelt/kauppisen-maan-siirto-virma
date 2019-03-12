@@ -20,5 +20,3 @@ services:
     volumes:
       - ./drupal/modules:/var/www/html/modules
       - ./drupal/themes:/var/www/html/themes
-  mariadb:
-    image: mariadb:latest
