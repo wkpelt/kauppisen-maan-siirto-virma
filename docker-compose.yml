@@ -9,7 +9,7 @@ services:
       dockerfile: Dockerfile
     command: 'yarn start'
     volumes:
-      - './frontend:/frontend'
+      - ./frontend:/frontend
     ports:
       - '3000:3000'
       - '35729:35729'
@@ -18,7 +18,7 @@ services:
     ports:
       - '3030:80'
     volumes:
-      - './drupal/modules:/var/www/html/modules'
-      - './drupal/themes:/var/www/html/themes'
+      - ./drupal/modules:/var/www/html/modules
+      - ./drupal/themes:/var/www/html/themes
   mariadb:
     image: mariadb:latest
