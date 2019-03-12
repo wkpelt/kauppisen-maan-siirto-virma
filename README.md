@@ -20,6 +20,18 @@ Projektissa on käytössä [Docker](https://www.docker.com/).
 
 Dockerin käyttöä helpottamaan käytetään docker-compose -tiedostoa. Docker-compose -tiedostossa kerrotaan millaiset kontit tulee muodostaa.
 
+#### Valmistele Drupal-kontin asetukset
+
+Kopioi override-tiedoston pohja, jota sitten muokataan omaan käyttöön.
+
+```
+$ cp docker-compose.override.yml.example docker-compose.override.yml
+```
+
+Muokkaa `docker-compose.override.yml` -tiedostoa ja keksi kontin root-käyttäjälle ja mariadb:lle salasanat.
+
+
+#### Konttien buildaaminen ja käynnistäminen
 Saadaksesi tarvittavat kontit käyntiin täytyy seuraava komento ajaa komentoriviltä projektin juuressa:
 
 ```
@@ -40,13 +52,3 @@ Seuraavalla komennolla saat kaikki kontit pysäytettyä:
 ```
 $ docker-compose stop
 ```
-
-### Drupal-kontin asetukset
-
-Kopioi override-tiedoston pohja, jota sitten muokataan omaan käyttöön.
-
-```
-$ cp docker-compose.override.yml.example docker-compose.override.yml
-```
-
-Keksi kontin root-käyttäjälle ja mariadb:lle salasanat.
