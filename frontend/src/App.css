@@ -9,3 +9,17 @@
 h1 {
   margin: 0;
 }
+
+.nav{
+  justify-content: center;
+}
+
+.n1{
+  padding: 4px 30px;
+}
+.n2{
+  padding: 4px 30px;
+}
+.n3{
+  padding: 4px 30px;
+}
