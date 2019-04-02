@@ -5,7 +5,6 @@ import Ajoneuvo from './Components/Ajoneuvo/Ajoneuvo';
 import Container from './Components/Container/Container';
 import Header from './Components/Header/Header';
 //import Footer from './Components/Footer/Footer';
-//import { Button } from 'reactstrap';
 
 
 class App extends Component {
@@ -38,8 +37,8 @@ class App extends Component {
         <a href="/">yhteystiedot </a>
         <Container>
           {this.state.ajoneuvot.map((element) => {
-            return <Ajoneuvo key={element.field_ajoneuvo[0].target_id} 
-            info={element.field_ajoneuvo[0]} />})}
+            return <Ajoneuvo key={element.nid[0].value} 
+            info={element} />})}
         </Container>
       </div>
     );
