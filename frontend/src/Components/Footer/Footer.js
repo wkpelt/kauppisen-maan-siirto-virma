@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer(props) {
   return (
     <div className={'Footer'}>
-      Digit &amp; Wunder
+      kauppisen maan siirto virma
     </div>
   );
 }

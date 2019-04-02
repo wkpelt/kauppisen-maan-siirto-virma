@@ -4,6 +4,7 @@ import Card from './Components/Card/Card';
 import Container from './Components/Container/Container';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
+import { Button } from 'reactstrap';
 
 class App extends Component {
   render() {
@@ -11,18 +12,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Container>
-          <Card>
-            <h2>.test</h2>
-          </Card>
-          <Card>
-            <h2>Tämä on korttiin piirretty otsikko</h2>
-          </Card>
-          <Card>
-            <h2>Tämä on korttiin piirretty otsikko</h2>
-          </Card>
-          <Card>
-            <h2>Tämä on korttiin piirretty otsikko</h2>
-          </Card>
+        <Button color="primary">primary</Button>{' '}
         </Container>
         <Footer />
       </div>
