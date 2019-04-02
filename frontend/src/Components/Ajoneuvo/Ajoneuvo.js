@@ -1,10 +1,31 @@
 import React, { Component } from 'react';
 import './Ajoneuvo.css';
+import Card from '../../Components/Card/Card';
+
+
 
 class Ajoneuvo extends Component {
-    componentDidMount(){}
+    constructor(props) {
+        super(props);
+    
+        this.state = {
+          imgsrc: this.props.url,
+        };
+      }
+    
     render(){
-        return
+        const urli = this.props.url
+
+        const joo = urli.substr(20)
+        return(
+            
+        <Card>
         <p>Ajoneuvo</p>
+        
+        <img className="image"src=""/>
+        </Card>
+        )
     }
 }
+
+export default Ajoneuvo;

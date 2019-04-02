@@ -1,9 +1,11 @@
 .Card {
   /* color: #05386B; */
-  background: #EDF5E1;
+  background: rgba(49, 49, 49, 0.753);
   border: 5px solid;
   border-color: transparent;
   border-radius: 15px 30px;
-  margin: 2em;
+  margin: 1%;
   padding: 1em;
+  width: 30%;
+  height: 40vh;
 }

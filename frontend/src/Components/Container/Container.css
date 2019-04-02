@@ -1,7 +1,11 @@
 .Container {
-  min-height: 100%;
+  min-height: 100vh;
   height: auto;
-  background: rgb(235, 21, 255);
+  background-image: url("https://shl.fi/wp-content/uploads/2013/07/Ty%C3%B6maa-k.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
