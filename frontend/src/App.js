@@ -11,9 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Container>
-        <Button color="primary">primary</Button>{' '}
-        </Container>
+        <Button color="primary">tule meille töihin :D</Button>
         <Footer />
       </div>
     );
