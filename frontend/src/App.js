@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import Ajoneuvo from './Components/Ajoneuvo/Ajoneuvo';
 import Duunari from './Components/Duunari/Duunari';
+import Rekry from './Components/Rekry/Rekry';
 import Etusivu from './Components/Etusivu/Etusivu';
 import Container from './Components/Container/Container';
 import Header from './Components/Header/Header';
 import { BrowserRouter as Router, Route, Switch, NavLink } from "react-router-dom";
-//import Footer from './Components/Footer/Footer';
 
 class App extends Component {
   constructor(props) {
@@ -28,6 +28,7 @@ class App extends Component {
         const ajoneuvot = data.filter(el => {
           return el.field_ajoneuvo
         })
+        console.log(ajoneuvot);
         const duunarit = data.filter(el => {
           return el.field_kuva
         })
@@ -41,19 +42,16 @@ class App extends Component {
 
       return (
         <div className="App">
-        <Header />
           <Router>
+        <NavLink className="Head" to="/">kauppisen maan siirto virma</NavLink>
             <div className="nav"> 
               <NavLink className="n1" to="/kalusto">Kalusto</NavLink>
               <NavLink className="n2" to="/miehet">Röiukot</NavLink>
               <NavLink className="n3" to="/rekry">Tule meille röihin</NavLink>
             </div>
 
-          
-
         <Container>
           <Switch>
-
             <Route exact path="/" component={Etusivu} />
   
 
@@ -67,12 +65,11 @@ class App extends Component {
                 return (<Duunari key={element.nid[0].value} 
                 info={element} />)})} />
 
-            <Route path="/rekry" component={Etusivu} />
+            <Route path="/rekry" component={Rekry} />
 
           </Switch>
-
         </Container>
-          </Router>
+        </Router>
 
       </div>
     );

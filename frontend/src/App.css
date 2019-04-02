@@ -10,6 +10,11 @@ h1 {
   margin: 0;
 }
 
+.Head {
+  font-size: 300%;
+  
+}
+
 .nav{
   justify-content: center;
 }
