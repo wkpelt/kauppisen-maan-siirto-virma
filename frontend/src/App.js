@@ -13,7 +13,7 @@ class App extends Component {
     super(props);
 
     this.state = {
-      list: [],
+      ajoneuvot: [],
     };
   }
   componentDidMount(){
@@ -21,27 +21,25 @@ class App extends Component {
       .then(response => response.json())
       .then(data =>  
         {
-          console.log(data)
-          const list = data.filter(el => {
+          console.log(data);
+          const ajoneuvot = data.filter(el => {
             return el.field_ajoneuvo
           })
-          console.log(list);
-          this.setState({ list })
+          console.log(ajoneuvot);
+          this.setState({ ajoneuvot })
         });
   }
   render() {
     return (
       <div className="App">
         <Header />
-        <a href="#">tule meille röihin :D </a>
-        <a href="#">kalusto </a>
-        <a href="#">yhteystiedot </a>
+        <a href="/">tule meille röihin :D </a>
+        <a href="/">kalusto </a>
+        <a href="/">yhteystiedot </a>
         <Container>
-        {this.state.list.map((element) => {
-         return <Ajoneuvo url={(element.field_ajoneuvo[0].url)} />
-        })}
-        <Ajoneuvo/>
-        <Ajoneuvo/>
+          {this.state.ajoneuvot.map((element) => {
+            return <Ajoneuvo key={element.field_ajoneuvo[0].target_id} 
+            info={element.field_ajoneuvo[0]} />})}
         </Container>
       </div>
     );

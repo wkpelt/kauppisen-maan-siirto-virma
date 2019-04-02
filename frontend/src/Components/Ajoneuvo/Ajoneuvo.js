@@ -13,14 +13,10 @@ class Ajoneuvo extends Component {
       }
     
     render(){
-        //const urli = this.props.url
-
-        //const joo = urli.substr(20)
         return(
-
         <Card>
         <p>Ajoneuvo</p>
-        <img className="image"src={this.props.url}/>
+        <img className="image" src={this.props.info.url} alt={this.props.info.alt}/>
         </Card>
         )
     }
