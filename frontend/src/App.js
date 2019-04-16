@@ -89,6 +89,14 @@ class App extends Component {
             </Switch>
           </Container>
         </Router>
+        <iframe
+          className="frame"
+          src="http://free.timeanddate.com/countdown/i6pz57tn/n101/cf100/cm0/cu4/ct0/cs0/ca0/co1/cr0/ss0/cac000/cpc000/pct/tc66c/fs100/szw320/szh135/tatperjantai%20countdown/tac000/tptTime%20since%20Event%20started%20in/tpc000/iso2019-04-19T00:00:00"
+          allowTransparency="true"
+          frameborder="0"
+          width="320"
+          height="135"
+        />
       </div>
     );
   }

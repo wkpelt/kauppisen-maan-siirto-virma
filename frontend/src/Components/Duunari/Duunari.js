@@ -35,10 +35,21 @@ class Duunari extends Component {
           >
             <ModalHeader toggle={this.toggle}>Yhteystiedot</ModalHeader>
             <ModalBody>
-              <h4>meikä: {this.props.info.field_nimi[0].value}</h4>
-              <h4>Puh_nro: {this.props.info.field_numero[0].value}</h4>
               <h4>
-                sähkönen posti: {this.props.info.field_sahkonen_posti[0].value}
+                meikä:{" "}
+                <h4 className="paska">{this.props.info.field_nimi[0].value}</h4>
+              </h4>
+              <h4>
+                Puh_nro:{" "}
+                <h4 className="paska">
+                  {this.props.info.field_numero[0].value}
+                </h4>
+              </h4>
+              <h4>
+                sähkönen posti:{" "}
+                <h4 className="paska">
+                  {this.props.info.field_sahkonen_posti[0].value}
+                </h4>
               </h4>
             </ModalBody>
             <ModalFooter>

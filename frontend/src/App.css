@@ -28,3 +28,10 @@ h1 {
 .n3{
   padding: 4px 30px;
 }
+
+.frame{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  
+}
