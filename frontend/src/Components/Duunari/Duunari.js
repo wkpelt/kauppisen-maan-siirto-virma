@@ -15,10 +15,8 @@ class Duunari extends Component {
     render(){
         const urli = (this.props.info.field_kuva[0].url).substring(14)
         return(
-        <Card>
+        <Card kuva={urli}>
         <h2>{this.props.info.title[0].value}</h2>
-        <img className="image" src={urli} 
-        alt={this.props.info.field_kuva[0].alt}/>
         </Card>
         )
     }
