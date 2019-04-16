@@ -1,15 +1,10 @@
-import React from 'react';
-import './Card.css';
+import React from "react";
+import "./Card.css";
 
 function Card(props) {
-  
-  const kuva = props.kuva
-  if(!kuva){
-    return (
-      <div className={'Card'}>
-        {props.children}
-      </div>
-    );
+  const kuva = props.kuva;
+  if (!kuva) {
+    return <div className={"Card"}>{props.children}</div>;
   }
 
   var tyyli = {
@@ -21,7 +16,7 @@ function Card(props) {
   };
 
   return (
-    <div className={'Card'} style={tyyli}>
+    <div className={"Card"} style={tyyli}>
       {props.children}
     </div>
   );
